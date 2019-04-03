@@ -1,0 +1,10 @@
+<div id="wrapper" fxLayout="row">
+  <div fxFlex="50%">
+    <app-text-box (text)="translate($event)" [lang]="language"></app-text-box>
+  </div>
+  <div fxFlex="50%">
+    <app-result-box [text]="translatedText" [lang]="language"></app-result-box>
+  </div>
+</div>
+
+<app-error-box [error]="error" *ngIf="error"></app-error-box>

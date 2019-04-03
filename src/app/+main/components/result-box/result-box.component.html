@@ -1,0 +1,12 @@
+<mat-card class="box">
+  <mat-card-title>Результат <small>{{ lang }}</small></mat-card-title>
+  <mat-card-content>
+    <form>
+      <mat-card-content>
+        <mat-form-field>
+          <textarea matInput placeholder="Перевод ..." [value]="text" rows="10" [readonly]="true"></textarea>
+        </mat-form-field>
+      </mat-card-content>
+    </form>
+  </mat-card-content>
+</mat-card>

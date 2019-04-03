@@ -1,0 +1,10 @@
+<mat-card class="box">
+  <mat-card-title>Перевод текста <small>{{ lang }}</small></mat-card-title>
+  <form [formGroup]="form">
+    <mat-card-content>
+      <mat-form-field>
+        <textarea matInput placeholder="Введите текст..." formControlName="text" rows="10"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+  </form>
+</mat-card>
